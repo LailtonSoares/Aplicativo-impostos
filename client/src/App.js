@@ -69,7 +69,6 @@ function App() {
       <Header />
       {Form ? (
         <div className='container'>
-          <br></br>
           <div className='card'>
             <div className='itemForm'>
               <h1 className='dados' onClick={LookData}>
@@ -165,9 +164,7 @@ function App() {
           </div>
         </div>
       ) : UsoConsumo ? (
-        <div className='container'>
-          <br></br>
-
+        <div className='container-items'>
           <div className='calculo-item'>
             {ValorTemp ? (
               <div className='item'>
@@ -670,9 +667,7 @@ function App() {
           })}
         </div>
       ) : (
-        <div className='container'>
-          <br></br>
-
+        <div className='container-items'>
           <div className='calculo-item'>
             {ValorTemp ? (
               <div className='item'>
