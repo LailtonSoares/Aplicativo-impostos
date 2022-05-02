@@ -1,0 +1,12 @@
+Get http://localhost:3001/calculos
+
+###
+POST http://localhost:3001/calculo/new
+Content-Type: application/json
+
+{
+    "ncm":"39199090"
+},
+{
+    "Ipirate":10
+}
