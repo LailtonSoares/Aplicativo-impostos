@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Axios from "axios";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   const [VSI, setVSI] = useState(0);
@@ -1176,6 +1177,7 @@ function App() {
           })}
         </div>
       )}
+      <Footer />
     </div>
   );
 }

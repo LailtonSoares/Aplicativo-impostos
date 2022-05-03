@@ -7,7 +7,7 @@ function Header(props) {
   return (
     <header>
     <div>
-      <h2 style={{color: 'orange',fontWeight: "bold"}}><b>Calculadora de impostos</b></h2>
+      <h2 style={{color: 'white',fontWeight: "bold"}}><b>Calculadora de impostos</b></h2>
     </div>
     </header>
   );

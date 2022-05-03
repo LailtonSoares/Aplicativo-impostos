@@ -4,22 +4,26 @@ const mongoose = require("mongoose");
 
 const cors = require("cors");
 
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 const app = express();
 
 app.use(express.json());
 
 app.use(cors());
 
+
+
 mongoose
-  .connect(
-    "mongodb+srv://newuser:180586.Ab@crud.eku5p.mongodb.net/valores?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
-  .then(() => console.log("Connected to MongoDB"))
-  .catch(console.error);
+  .connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log('connected to db');
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
 
 const Info = require("./models/Dados");
 
